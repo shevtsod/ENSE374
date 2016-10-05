@@ -37,10 +37,10 @@ public class LinkedList {
 		//If no head, set this node to head and tail
 		//Otherwise, set this node to the tail
 		if(head == null) {
-			this.head = this.tail = le;
+			this.head = this.tail = this.le;
 		} else {
 			this.le = new ListElement();
-			this.tail = le;
+			this.tail = this.le;
 		}
 		
 		_nElements++;
@@ -54,8 +54,7 @@ public class LinkedList {
 	 *   The ListElement at the index
 	 *   null if ListElement does not exist
 	 */
-	public ListElement getElement(int index) {
-		
+	public ListElement getElement(int index) {	
 		if(index > _nElements)
 			return null;
 		
@@ -70,9 +69,14 @@ public class LinkedList {
 	 *   The index of the requested node
 	 * @return ListElement
 	 *   The ListElement that is removed at the index
+	 *   null if ListElement does not exist
 	 */
 	public ListElement deleteElement(int index) {
+		if(index > _nElements)
+			return null;
 		
+		//Start from the tail and iterate to the requested index.
+		le = head;
 		return null;
 	}
 	
