@@ -6,5 +6,6 @@ My solutions to labs in ENSE 374 - Software Project Management.
 
 The folders in the root folder are Eclipse project.  
 To compile in Eclipse, go to:  
->File -> Import -> Existing Projects into Workspace  
+>File -> Import -> Existing Projects into Workspace
+ 
 From there, find the folder to import and build.
