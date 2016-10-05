@@ -60,7 +60,12 @@ public class LinkedList {
 		
 		//Start from the head and iterate to the requested index.
 		le = head;
-		return null;
+		
+		for(int i = 0; i < index; i++) {
+			le = le.getNext();
+		}
+		
+		return le;
 	}
 	
 	/**
@@ -75,9 +80,16 @@ public class LinkedList {
 		if(index > _nElements)
 			return null;
 		
-		//Start from the tail and iterate to the requested index.
+		//Start from the head and iterate to the requested index.
 		le = head;
-		return null;
+		
+		for(int i = 0; i < index; i++) {
+			le = le.getNext();
+		}
+		
+		//Remove this node, and reroute previous and next around it.
+		//TODO: Implement deleteElement
+		return le;
 	}
 	
 	public void printLinkedListTail() {
