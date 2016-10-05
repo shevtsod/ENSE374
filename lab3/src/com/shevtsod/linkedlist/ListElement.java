@@ -1,11 +1,11 @@
-/*
+/**
 * FILENAME:
 *  ListElement.java
 *
 * DESCRIPTION:
-*	Implements a single linked list.
+*	Implements a list element to be used in a linked list.
 *
-* AUTHOR:
+* @author
 *  Daniel Shevtsov (SID: 200351253)
 */
 

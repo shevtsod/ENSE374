@@ -1,3 +1,14 @@
+/**
+* FILENAME:
+*  LinkedList.java
+*
+* DESCRIPTION:
+*	Implements a single linked list.
+*
+* @author
+*  Daniel Shevtsov (SID: 200351253)
+*/
+
 package com.shevtsod.linkedlist;
 
 public class LinkedList {
@@ -10,6 +21,7 @@ public class LinkedList {
 	 */
 	public LinkedList() {
 		le = head = tail = null;
+		_nElements = 0;
 	}
 	
 	/**
@@ -23,13 +35,15 @@ public class LinkedList {
 		this.le.setData(le.getData());
 		
 		//If no head, set this node to head and tail
+		//Otherwise, set this node to the tail
 		if(head == null) {
 			this.head = this.tail = le;
 		} else {
 			this.le = new ListElement();
 			this.tail = le;
 		}
-			
+		
+		_nElements++;
 	}
 	
 	/**
@@ -38,9 +52,15 @@ public class LinkedList {
 	 *   The index of the requested node
 	 * @return ListElement
 	 *   The ListElement at the index
+	 *   null if ListElement does not exist
 	 */
 	public ListElement getElement(int index) {
 		
+		if(index > _nElements)
+			return null;
+		
+		//Start from the head and iterate to the requested index.
+		le = head;
 		return null;
 	}
 	
