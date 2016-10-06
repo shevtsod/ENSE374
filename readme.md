@@ -4,7 +4,7 @@ My solutions to labs in ENSE 374 - Software Project Management.
 ##Overview
 > **Lab 1** - Introduction to Java  
 > **Lab 2** - Introduction to Java in an IDE (Eclipse)  
-> **Lab 3** - Introduction to revision control (Git)  
+> **Lab 3** - Introduction to version control (Git)  
 
 ##Compilation
 These compilation instructions apply to **Eclipse IDE for Java Neon.1**
@@ -24,7 +24,7 @@ Using a text editor, a class `SavingsAccount` was created to hold a bank savings
 ###Lab 2 - Introduction to Java in an IDE (Eclipse)
 Using any Java IDE (Eclipse), a class `Employee` was created to hold information for an employee to be tested in a class `Interface`. Instances of `Employee` were placed in an array and populated with data from a file containing randomly generated entries `RandomData.csv` (generated using [generatedata.com](http://www.generatedata.com/))
 
-###Lab 3 - Introduction to revision control (Git) 
-Introduction to revision control using command-line `Git`, the Windows shell interface [TortoiseGit](https://tortoisegit.org/), and `GitHub`. Classes `ListElement` and `LinkedList` were created in Phase 1 to implement a single linked list to become familiar with revision control on `GitHub`. In Phase 2, a branch `doubleLinkedList` was created to modify the linked list and implement a double linked list.
+###Lab 3 - Introduction to version control (Git) 
+Introduction to version control using command-line `Git`, the Windows shell interface [TortoiseGit](https://tortoisegit.org/), and `GitHub`. Classes `ListElement` and `LinkedList` were created in Phase 1 to implement a single linked list to become familiar with revision control on `GitHub`. In Phase 2, a branch `doubleLinkedList` was created to modify the linked list and implement a double linked list.
 
 ...
