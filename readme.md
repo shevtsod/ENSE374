@@ -10,7 +10,7 @@ My solutions to labs in ENSE 374 - Software Project Management.
 ##Compilation
 These compilation instructions apply to **Eclipse IDE for Java Neon.1**
 
-To compile in Eclipse, go to:
+To compile in Eclipse, go to
 >File -> Open Projects from File System
 
 Under `Import Source`, press `Directory` and navigate to the folder (lab1, lab2, etc.)
