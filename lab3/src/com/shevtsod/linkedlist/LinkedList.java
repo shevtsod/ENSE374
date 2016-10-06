@@ -3,7 +3,7 @@
 *  LinkedList.java
 *
 * DESCRIPTION:
-*	Implements a single linked list.
+*	Implements a double linked list.
 *
 * @author
 *  Daniel Shevtsov (SID: 200351253)
@@ -16,7 +16,6 @@ import java.lang.reflect.Array;
 public class LinkedList {
 	private ListElement head, tail, le;
 	private int _nElements;
-	
 	
 	/**
 	 * Construct an empty linked list.
@@ -39,10 +38,11 @@ public class LinkedList {
 		//If no head, set this node to head and tail
 		//Otherwise, set this node to the tail
 		if(head == null) {
-			this.head = this.tail = this.le;
+			head = tail = this.le;
 		} else {
-			this.tail.setNext(this.le);
-			this.tail = this.le;
+			tail.setNext(this.le);
+			this.le.setPrev(tail);
+			tail = this.le;
 		}
 		
 		_nElements++;
@@ -100,37 +100,37 @@ public class LinkedList {
 		}
 			
 		//Remove this node, and reroute previous and next around it.
-		if(temp != null)
+		if(temp != null) {
 			temp.setNext(le.getNext());
+			le.getNext().setPrev(temp);
+		}
 		
 		_nElements--;
-
-		return le;
+		
+		//Remove this element so garbage collector automatically cleans after it.
+		//temp will be destroyed after this method ends.
+		temp = le;
+		le = null;
+		return temp;
 	}
 	
 	/**
 	 * Print this linked list from tail to head
 	 */
 	public void printLinkedListTail() {
-		//Start from the head and iterate to the tail, saving
-		//each value to an array.
-		int[] listElementArray = new int[_nElements];
+		//Start from the tail and iterate to the head, printing each
+		//node on the way.
 		if(head == null) {
 			System.out.println("Empty list.");
 			return;
 		}
 		
-		le = head;
-		for(int i = 0; i < _nElements; i++) {
-			listElementArray[i] = le.getData();
-			le = le.getNext();
+		le = tail;
+		for(int i = 0; i < _nElements - 1; i++) {
+			System.out.print(le.getData() + " <- ");
+			le = le.getPrev();
 		}
-		
-		//Print array backwards
-		for(int i = _nElements - 1; i > 0; i--) {
-			System.out.print(listElementArray[i] + " <- ");
-		}
-		System.out.println(listElementArray[0]);
+		System.out.println(le.getData());
 	}
 	
 	/**
