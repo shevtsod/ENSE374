@@ -25,6 +25,4 @@ Using any Java IDE (Eclipse), a class `Employee` was created to hold information
 ###**Lab 3** - Introduction to revision control (Git) 
 Introduction to revision control using command-line `Git`, the Windows shell interface [TortoiseGit](https://tortoisegit.org/), and `GitHub`. Classes `ListElement` and `LinkedList` were created in Phase 1 to implement a single linked list to become familiar with revision control on `GitHub`. In Phase 2, a branch `doubleLinkedList` was created to modify the linked list and implement a double linked list.
 
-.
-.
-.
+...
