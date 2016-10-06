@@ -104,8 +104,12 @@ public class LinkedList {
 			temp.setNext(le.getNext());
 		
 		_nElements--;
-
-		return le;
+		
+		//Remove this element so garbage collector automatically cleans after it.
+		//temp will be destroyed after this method ends.
+		temp = le;
+		le = null;
+		return temp;
 	}
 	
 	/**
