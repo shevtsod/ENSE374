@@ -43,6 +43,7 @@ public class ListProgram {
 		
 		System.out.println("Populating list with values 1 to 9");
 		for(int i = 1; i < 10; i++) {
+			le = new ListElement();
 			le.setData(i);
 			ll.addElement(le);
 		}
