@@ -12,12 +12,13 @@
 package com.shevtsod.linkedlist;
 
 public class ListElement {
-	private ListElement next;
+	private ListElement next, prev;
 	private int data;
 	
 	public ListElement() {
 		this.setData(0);
 		this.setNext(null);
+		this.setPrev(null);
 	}
 
 	/**
@@ -57,5 +58,24 @@ public class ListElement {
 	 */
 	public void setNext(ListElement next) {
 		this.next = next;
+	}
+	
+	/**
+	 * Get the previous ListElement
+	 * @return prev
+	 *   The previous ListElement in the list
+	 *   null if previous element does not exist
+	 */
+	public ListElement getPrev() {
+		return prev;
+	}
+
+	/**
+	 * Set the previous ListElement
+	 * @param prev
+	 *   The previous ListElement to be added to the list
+	 */
+	public void setPrev(ListElement prev) {
+		this.prev = prev;
 	}
 }
