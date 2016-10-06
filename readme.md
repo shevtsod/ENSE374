@@ -4,7 +4,9 @@ My solutions to labs in ENSE 374 - Software Project Management.
 ##Overview
 
 > **Lab 1** - Introduction to Java
+> 
 > **Lab 2** - Introduction to Java in an IDE (Eclipse)
+> 
 > **Lab 3** - Introduction to revision control (Git)
 
 ##Compilation
