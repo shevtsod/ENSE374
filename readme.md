@@ -1,6 +1,4 @@
 # ENSE374
-[TOC]
-
 My solutions to labs in ENSE 374 - Software Project Management.
 ##Overview
 > **Lab 1** - Introduction to Java  
