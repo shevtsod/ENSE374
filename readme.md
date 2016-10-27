@@ -57,4 +57,5 @@ See repository `ENSE374LabProject`.
 
 Creation of `Software Design Diagram`, `UML Class Diagram`, and coding of class and method stubs for an animal habitat simulation software project.
 
+---
 > Written with [StackEdit](https://stackedit.io/).
