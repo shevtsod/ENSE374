@@ -1,4 +1,4 @@
-# ENSE374
+# ENSE 374
 My solutions to labs in ENSE 374 - Software Project Management.
 ##Overview
 > **Lab 1** - Introduction to Java  
