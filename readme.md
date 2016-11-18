@@ -1,5 +1,6 @@
 # ENSE 374
-My solutions to labs in ENSE 374 - Software Project Management.
+My solutions to labs in ENSE 374 - Software Project Management.  
+>**Note:** This lab was completed on Nov. 17, 2016  
 ##Overview
 > **Lab 1** - Introduction to Java  
 > **Lab 2** - Introduction to Java in an IDE (Eclipse)  
