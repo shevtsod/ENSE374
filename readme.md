@@ -6,7 +6,7 @@ My solutions to labs in ENSE 374 - Software Project Management.
 > **Lab 1** - Introduction to Java  
 > **Lab 2** - Introduction to Java in an IDE (Eclipse)  
 > **Lab 3** - Introduction to Version Control (Git)  
-> **Lab 4** - Animal Habitat Simulation Project - Requirements & Design
+> **Lab 4 and Lab 5** - Animal Habitat Simulation Project 
 
 ##Compilation
 ###Eclipse IDE for Java Neon.1
@@ -56,10 +56,8 @@ Using any Java IDE (Eclipse), a class `Employee` was created to hold information
 ###Lab 3 - Introduction to Version Control (Git) 
 Introduction to version control using command-line `Git`, the Windows shell interface [TortoiseGit](https://tortoisegit.org/), and `GitHub`. Classes `ListElement` and `LinkedList` were created in Phase 1 to implement a single linked list to become familiar with revision control on `GitHub`. In Phase 2, a branch `doubleLinkedList` was created to modify the linked list and implement a double linked list.
 
-###Lab 4 - Animal Habitat Simulation Project - Requirements & Design
-See repository `ENSE374LabProject`.  
-
-Creation of `Software Design Diagram`, `UML Class Diagram`, and coding of class and method stubs for an animal habitat simulation software project.
+###Lab 4 and Lab 5 - Animal Habitat Simulation Project
+See repository [ENSE374LabProject](https://github.com/shevtsod/ENSE374LabProject).
 
 ---
 > Written with [StackEdit](https://stackedit.io/).
