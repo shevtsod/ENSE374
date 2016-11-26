@@ -11,7 +11,7 @@ My solutions to labs in ENSE 374 - Software Project Management.
 ##Compilation
 ###Eclipse IDE for Java Neon.1
 To compile, go to
->File -> New Java Project
+>File -> New -> Java Project
 
 Name the project, set the `Location` of the project or keep the default, and navigate to the directory of the project in the system explorer.  
 
